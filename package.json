@@ -1,27 +1,23 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "main": "Backend/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node Backend/server.js",
-    "dev": "nodemon Backend/server.js",
-    "test": "node -e \"console.log('Testing database connection...'); require('./Backend/server.js');\""
+     "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": ["portfolio", "contact-form", "neon", "postgresql"],
   "author": "Sheikh Noor Abdullah",
   "license": "ISC",
   "description": "Personal portfolio website with contact form using Neon PostgreSQL",
   "dependencies": {
-    "@neondatabase/serverless": "^1.0.1",
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.1",
-    "pg": "^8.16.3"
+    "@neondatabase/serverless": "^0.10.2",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.4"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   }
 }
